@@ -1,0 +1,322 @@
+/* Import Google Font - Dancing Script (Cursive) */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #ffe6eb; /* Light rose pink background */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+header {
+    background: #ffb6c1; /* Light rose pink */
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem; /* Adjust the font size */
+    font-weight: bold; /* Bold the text */
+    color: #ffe6eb; /* Dark rose pink color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.logo:hover {
+    color: #f8cfd8; /* Change color on hover */
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.cta-button {
+    background: #ffd1dc; /* Softer pink for CTA button */
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+
+
+/* Navbar Styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffb6c1; /* Ensure the navbar background remains visible */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow to differentiate it from content */
+    
+
+}
+
+.navbar-brand:hover {
+    color: #ff6f8d; /* Change color on hover */
+}
+
+
+/* Hero Section */
+.hero-section {
+    height: 90vh;
+    background: url('Images\Screenshot 2024-11-11 150650.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(255, 182, 193, 0.8); /* Fallback light pink background if image doesn't load */
+    opacity: 0.9;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #ffb6c1; /* Light rose pink */
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ff91a4; /* Darker pink for hover effect */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #ffb6c1; /* Light rose pink */
+    color: #fff;
+}
+
+/* About Us Section */
+.about-section {
+    padding: 63px 20px;
+    background-color: #ffe6eb; /* Light rose pink background */
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #ff91a4; /* Darker rose pink for contrast */
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* About Content */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.about-content h3 {
+    font-size: 2rem;
+    color: #ff91a4;
+    margin-bottom: 15px;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+    padding: 30px;
+}
+
+/* About Values */
+.about-values {
+    text-align: left;
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+.about-values h3 {
+    font-size: 2rem;
+    color: #ff91a4;
+    margin-bottom: 15px;
+}
+
+.about-values ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-values li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.about-values li strong {
+    color: #ff91a4;
+}
+
+/* About Delivery */
+.about-delivery {
+    text-align: left;
+    margin: 30px auto;
+    max-width: 800px;
+    margin-right: 55%;
+}
+
+.about-delivery li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.about-delivery h3{
+    text-align: left;
+    margin: 15px auto;
+    max-width: 800px;
+}
+
+.about-delivery p{
+    text-align: left;
+    margin: 15px auto;
+    max-width: 800px;
+}
+
+
+/* Gallery Section */
+.gallery-section {
+    padding: 50px 20px;
+    background-color: #ffe6eb; /* Light rose pink background */
+    text-align: center;
+    padding: 65px;
+}
+
+.gallery-section h2 {
+    font-size: 2.5rem;
+    color: #ff91a4; /* Darker rose pink for contrast */
+    margin-bottom: 10px;
+}
+
+.gallery-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    display: block;
+    transition: transform 0.3s ease;
+    margin: 0;
+    padding: 0;
+    width: 100%;    /* Ensure the image fills the container's width */
+    height: 100%;   /* Ensure the image fills the container's height */
+    object-fit: contain; /* Ensures the image is resized while maintaining the aspect ratio */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #ffe6eb; /* Light rose pink background */
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #ff91a4; /* Darker rose pink for contrast */
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: auto;
+}
+
+.info-item h3 {
+    font-size: 1.5rem;
+    color: #ff91a4;
+    margin-bottom: 5px;
+}
+
+
+
